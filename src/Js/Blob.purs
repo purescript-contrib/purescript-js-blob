@@ -64,7 +64,7 @@ foreign import fromStringsImpl :: Array String -> Nullable BlobOptionsImpl -> Bl
 -- | Creates a String with the given Mediatype
 -- | For example:
 -- | ```
--- | myBlob = fromString (unsafeStringify { name: "Carl", age: 25 }) (MediaType "application/json")
+-- | myBlob = fromString (unsafeStringify { name: "Carl", age: 25 }) (Just { "type": MediaType "application/json", endings: Transparent})
 -- | ```
 fromString :: String -> Maybe BlobOptions -> Blob
 fromString strs opts = fromStringsImpl [ strs ] (opts <#> toBlobOptionsImpl # toNullable)
