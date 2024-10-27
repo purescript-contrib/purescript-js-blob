@@ -1,4 +1,4 @@
-module Test.Js.Blob
+module Test.JS.Blob
   ( test
   ) where
 
@@ -14,7 +14,7 @@ import Effect (Effect)
 import Effect.Aff (launchAff_)
 import Effect.Class (liftEffect)
 import Effect.Class.Console (log)
-import Js.Blob as Blob
+import JS.Blob as Blob
 import Promise.Aff as Promise
 import Test.Assert (assertEqual)
 

@@ -1,4 +1,4 @@
-module Js.Blob
+module JS.Blob
   ( Blob
   , BlobEnding(..)
   , BlobOptions
