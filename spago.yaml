@@ -1,0 +1,28 @@
+package:
+  name: js-blob
+  dependencies:
+    - arraybuffer-types
+    - arrays
+    - console
+    - effect
+    - integers
+    - js-promise
+    - maybe
+    - media-types
+    - newtype
+    - nullable
+    - numbers
+    - prelude
+    - unsafe-coerce
+  test:
+    main: Test.Main
+    dependencies:
+      - aff
+      - arraybuffer-types
+      - arrays
+      - assert
+      - js-promise
+      - js-promise-aff
+workspace:
+  packageSet:
+    registry: 81.4.0
